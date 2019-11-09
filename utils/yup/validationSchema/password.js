@@ -1,0 +1,15 @@
+const Yup = require('yup')
+const getErrors = require('utils/yup/getErrors')
+
+const schema = Yup.object().shape({
+  password: Yup.string()
+    .required('Password is required')
+    .min(8, 'Password must be at least 8 characters long')
+    .max(16, "Password can't be longer than 16 characters")
+    .matches(/[A-Z]/, 'Password must contain at least one uppercase character')
+    .matches(/[a-z]/, 'Password must contain at least one lowercase character')
+    .matches(/\d/, 'Password must contain at least one number')
+    .matches(/\W/, 'Password must contain at least one special character')
+    .typeError('Password  must be a string')
+})
+module.exports = object => getErrors(schema, object)

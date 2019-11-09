@@ -1,0 +1,44 @@
+{
+  "name": "socket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run development",
+    "dev": "npm run development",
+    "development": "node_modules/.bin/cross-env NODE_PATH=. NODE_ENV=development DEBUG=app:* node_modules/.bin/nodemon ./index.js",
+    "prod": "npm run production",
+    "production": "node_modules/.bin/cross-env NODE_PATH=. NODE_ENV=production DEBUG= node_modules/.bin/nodemon start ./index.js",
+    "lint": "node_modules/.bin/eslint .",
+    "test": "node_modules/.bin/jest --verbose --passWithNoTests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "compression": "^1.7.4",
+    "config": "^3.2.4",
+    "cors": "^2.8.5",
+    "cross-env": "^6.0.3",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "helmet": "^3.21.2",
+    "jest": "^24.9.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.9",
+    "morgan": "^1.9.1",
+    "nodemailer": "^6.3.1",
+    "nodemon": "^1.19.4",
+    "pm2": "^4.1.2",
+    "read-last-lines": "^1.7.1",
+    "socket.io": "^2.3.0",
+    "winston": "^3.2.1",
+    "winston-transport": "^4.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0"
+  }
+}

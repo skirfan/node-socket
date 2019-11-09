@@ -1,0 +1,49 @@
+---
+JavaScript:
+  beautifiers:
+  - Prettier
+  - ESLint
+  end_with_semicolon: false
+  max_preserve_newlines: 1
+  multiline_ternary: always
+  object_curly_spacing: true
+  quotes: single
+  wrap_line_length: 80
+JSX:
+  beautifiers:
+    - Prettier
+  end_with_semicolon: false
+  object_curly_spacing: true
+  quotes: single
+  wrap_line_length: 80
+JSON:
+  beautifiers:
+    - Prettier
+  indent_size: 2
+  indent_style: space
+  quotes: double
+Markdown:
+  beautifiers:
+    - Prettier
+  indent_style: space
+CSS:
+  beautifiers:
+    - Prettier
+    - Pretty Diff
+  indent_size: 2
+  indent_style: space
+  max_preserve_newlines: 1
+SCSS:
+  beautifiers:
+    - Prettier
+    - Pretty Diff
+  indent_size: 2
+  indent_style: space
+  max_preserve_newlines: 1
+TypeScript:
+  beautifiers:
+    - Prettier
+  indent_size: 2
+  indent_style: space
+  max_preserve_newlines: 1
+  multiline_ternary: always

@@ -1,0 +1,6 @@
+{
+  "files.associations": {
+    "*.js": "javascript"
+  },
+  "editor.defaultFormatter": "Glavin001.unibeautify-vscode"
+}
